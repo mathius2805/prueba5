@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis 3 años Vane</title>
+    <!-- Fuentes de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Video de fondo -->
+    <div class="video-background">
+        <video autoplay muted loop id="myVideo">
+            <source src="fondo.mp4" type="video/mp4">
+            Tu navegador no soporta la reproducción de video.
+        </video>
+    </div>
+
+    <!-- Música de fondo -->
+    <audio id="background-music" loop>
+        <source src="musica.mp3" type="audio/mpeg">
+        Tu navegador no soporta la reproducción de audio.
+    </audio>
+
+    <!-- Contenido principal -->
+    <div class="content">
+        <h1 class="animated-title">¡Celebramos Mis 3 Años Vane!</h1>
+        <p class="animated-text">Te invitamos a mi fiesta de 3 años.</p>
+
+        <!-- Fecha de la fiesta -->
+        <p class="event-date">03 - 05 - 2025</p>
+
+        <!-- Contador de días -->
+        <div class="countdown-container">
+            <div class="countdown">
+                <div class="countdown-number" id="days">00</div>
+                <div class="countdown-label">Días</div>
+            </div>
+            <div class="countdown">
+                <div class="countdown-number" id="hours">00</div>
+                <div class="countdown-label">Horas</div>
+            </div>
+            <div class="countdown">
+                <div class="countdown-number" id="minutes">00</div>
+                <div class="countdown-label">Minutos</div>
+            </div>
+            <div class="countdown">
+                <div class="countdown-number" id="seconds">00</div>
+                <div class="countdown-label">Segundos</div>
+            </div>
+        </div>
+
+        <button class="animated-button" id="confirm-button">¡Confirma tu asistencia!</button>
+
+        <!-- Botón para reproducir/pausar música -->
+        <button class="music-button" id="play-music">Reproducir Música</button>
+
+        <!-- Nuevos botones (inicialmente ocultos) -->
+        <div class="new-buttons" id="new-buttons">
+            <p class="event-time">Te esperamos 11:45 am</p>
+            <a href="https://maps.app.goo.gl/SPHEz85Ev9phpTVv6" target="_blank" class="new-button">Ver Ubicación Iglesia</a>
+            <p class="event-time">Despues de la misa religiosa te esperamos a las 3:00 pm </p>
+            <a href="https://maps.app.goo.gl/jdKzhHyXXk6iXfWH8" target="_blank" class="new-button">Ver Ubicación Comida</a>
+            <button class="new-button">Opción 3</button>
+        </div>
+    </div>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
